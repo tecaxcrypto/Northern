@@ -242,10 +242,10 @@ UniValue stop(const UniValue& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "stop\n"
-            "\nStop Bitcoin Green server.");
+            "\nStop Northern server.");
     // Shutdown will take long enough that the response should get back
     StartShutdown();
-    return "Bitcoin Green server stopping";
+    return "Northern server stopping";
 }
 
 
@@ -327,33 +327,33 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "reconsiderblock", &reconsiderblock, true, true, false},
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
-        /* Bitcoin Green features */
-        {"bitcoingreen", "masternode", &masternode, true, true, false},
-        {"bitcoingreen", "listmasternodes", &listmasternodes, true, true, false},
-        {"bitcoingreen", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"bitcoingreen", "masternodeconnect", &masternodeconnect, true, true, false},
-        {"bitcoingreen", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"bitcoingreen", "masternodedebug", &masternodedebug, true, true, false},
-        {"bitcoingreen", "startmasternode", &startmasternode, true, true, false},
-        {"bitcoingreen", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"bitcoingreen", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"bitcoingreen", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"bitcoingreen", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"bitcoingreen", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"bitcoingreen", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"bitcoingreen", "mnbudget", &mnbudget, true, true, false},
-        {"bitcoingreen", "preparebudget", &preparebudget, true, true, false},
-        {"bitcoingreen", "submitbudget", &submitbudget, true, true, false},
-        {"bitcoingreen", "mnbudgetvote", &mnbudgetvote, true, true, false},
-        {"bitcoingreen", "getbudgetvotes", &getbudgetvotes, true, true, false},
-        {"bitcoingreen", "getnextsuperblock", &getnextsuperblock, true, true, false},
-        {"bitcoingreen", "getbudgetprojection", &getbudgetprojection, true, true, false},
-        {"bitcoingreen", "getbudgetinfo", &getbudgetinfo, true, true, false},
-        {"bitcoingreen", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
-        {"bitcoingreen", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"bitcoingreen", "checkbudgets", &checkbudgets, true, true, false},
-        {"bitcoingreen", "mnsync", &mnsync, true, true, false},
-        {"bitcoingreen", "spork", &spork, true, true, false},
+        /* Northern features */
+        {"northern", "masternode", &masternode, true, true, false},
+        {"northern", "listmasternodes", &listmasternodes, true, true, false},
+        {"northern", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"northern", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"northern", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"northern", "masternodedebug", &masternodedebug, true, true, false},
+        {"northern", "startmasternode", &startmasternode, true, true, false},
+        {"northern", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"northern", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"northern", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"northern", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"northern", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"northern", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"northern", "mnbudget", &mnbudget, true, true, false},
+        {"northern", "preparebudget", &preparebudget, true, true, false},
+        {"northern", "submitbudget", &submitbudget, true, true, false},
+        {"northern", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"northern", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"northern", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"northern", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"northern", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"northern", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"northern", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"northern", "checkbudgets", &checkbudgets, true, true, false},
+        {"northern", "mnsync", &mnsync, true, true, false},
+        {"northern", "spork", &spork, true, true, false},
 #ifdef ENABLE_WALLET
 
         /* Wallet */
@@ -1070,7 +1070,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(string methodname, string args)
 {
-    return "> bitcoingreen-cli " + methodname + " " + args + "\n";
+    return "> northern-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args)

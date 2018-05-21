@@ -1,21 +1,21 @@
 
 Debian
 ====================
-This directory contains files used to package bitcoingreend/bitcoingreen-qt
-for Debian-based Linux systems. If you compile bitcoingreend/bitcoingreen-qt yourself, there are some useful files here.
+This directory contains files used to package northernd/northern-qt
+for Debian-based Linux systems. If you compile northernd/northern-qt yourself, there are some useful files here.
 
-## bitcoingreen: URI support ##
+## northern: URI support ##
 
 
-bitcoingreen-qt.desktop  (Gnome / Open Desktop)
+northern-qt.desktop  (Gnome / Open Desktop)
 To install:
 
-	sudo desktop-file-install bitcoingreen-qt.desktop
+	sudo desktop-file-install northern-qt.desktop
 	sudo update-desktop-database
 
 If you build yourself, you will either need to modify the paths in
-the .desktop file or copy or symlink your bitcoingreenqt binary to `/usr/bin`
-and the `../../share/pixmaps/bitcoingreen128.png` to `/usr/share/pixmaps`
+the .desktop file or copy or symlink your northernqt binary to `/usr/bin`
+and the `../../share/pixmaps/northern128.png` to `/usr/share/pixmaps`
 
-bitcoingreen-qt.protocol (KDE)
+northern-qt.protocol (KDE)
 

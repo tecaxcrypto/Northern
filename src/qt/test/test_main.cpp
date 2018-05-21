@@ -5,7 +5,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/bitcoingreen-config.h"
+#include "config/northern-config.h"
 #endif
 
 #include "util.h"
@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
     // Don't remove this, it's needed to access
     // QCoreApplication:: in the tests
     QCoreApplication app(argc, argv);
-    app.setApplicationName("BitcoinGreen-Qt-test");
+    app.setApplicationName("Northern-Qt-test");
 
     URITests test1;
     if (QTest::qExec(&test1) != 0)

@@ -6,7 +6,7 @@
 #define BITCOIN_QT_NOTIFICATOR_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/bitcoingreen-config.h"
+#include "config/northern-config.h"
 #endif
 
 #include <QIcon>
