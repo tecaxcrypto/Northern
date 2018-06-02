@@ -1,5 +1,8 @@
 # Northern Core integration/staging repository
 
+Northern Core is a decentralized, peer-to-peer cryptocurrency with a primary focus on energy-efficiency and scalabilty. The Northern Network makes use of only Proof-of-Stake mining, in the form of masternodes and staking. This means that the Northern blockchain has a very low impact on the environment and ensures that scaling will be a smooth transition in future. 
+
+Furthermore, as result of offering multiple ways for users to mint new NORT coins, the network is a lot less centralized than some Proof-of-Work coins that have their hashrates dominated by one or two mining pools.
 
 ## Coin Specs
 
