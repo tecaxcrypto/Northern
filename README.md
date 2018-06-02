@@ -8,8 +8,11 @@
 #### Block times: - *2 minutes* 
 #### Maximum supply: - *5,000,000 (5 million) NORT*
 #### Consensus mechanism: - *Proof-of-Stake (85% masternodes, 15% stakers)*
+#### Algorithm: - *Quark-hash* 
 #### Masternode collateral - *2,500 NORT*  
 #### Features: - *Budget, treausury and masternode governance is enabled* 
+#### RPC Port: - *9332* 
+#### P2P Port: - *6942* 
 
 #
 
