@@ -8,7 +8,7 @@ Furthermore, as result of offering multiple ways for users to mint new NORT coin
 
 #
 
-#### Block times: - *2 minutes* 
+#### Block times: - *1 minute* 
 #### Maximum supply: - *5,000,000 (5 million) NORT*
 #### Consensus mechanism: - *Proof-of-Stake (85% masternodes, 15% stakers)*
 #### Algorithm: - *Quark-hash* 
