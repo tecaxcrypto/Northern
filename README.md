@@ -13,7 +13,7 @@ Furthermore, as result of offering multiple ways for users to mint new NORT coin
 #### Consensus mechanism: - *Proof-of-Stake (85% masternodes, 15% stakers)*
 #### Algorithm: - *Quark-hash* 
 #### Masternode collateral - *2,500 NORT*  
-#### Features: - *Budget, treausury and masternode governance is enabled* 
+#### Features: - *SwiftTX, budget, treausury and masternode governance is enabled* 
 #### RPC Port: - *9332* 
 #### P2P Port: - *6942* 
 
