@@ -4,6 +4,8 @@ Northern Core is a decentralized, peer-to-peer cryptocurrency with a primary foc
 
 Furthermore, as result of offering multiple ways for users to mint new NORT coins, the network is a lot less centralized than some Proof-of-Work coins that have their hashrates dominated by one or two mining pools.
 
+### View the Northern whitepaper here: https://cdn.discordapp.com/attachments/416697792048922636/461555510496329728/Northern-Whitepaper-v1.0.0.pdf
+
 ## Coin Specs
 
 #
