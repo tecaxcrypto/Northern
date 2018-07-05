@@ -37,7 +37,7 @@ Furthermore, as result of offering multiple ways for users to mint new NORT coin
 
 #### Block 1,500,001-6,000,000   -   *0.250 NORT*
 
-#### *11 year tapering inflation reward, with a cumlative supply capped at 5,000,000 NORT.*
+#### *11 year tapering inflation reward, with a cumulative supply capped at 5,000,000 NORT.*
 
 #
 
