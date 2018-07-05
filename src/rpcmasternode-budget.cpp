@@ -159,7 +159,7 @@ UniValue preparebudget(const UniValue& params, bool fHelp)
 
     if (fHelp || params.size() != 6)
         throw runtime_error(
-            "preparebudget \"proposal-name\" \"url\" payment-count block-start \"nort-address\" monthy-payment\n"
+            "preparebudget \"proposal-name\" \"url\" payment-count block-start \"nort-address\" monthly-payment\n"
             "\nPrepare proposal for network by signing and creating tx\n"
 
             "\nArguments:\n"
@@ -252,7 +252,7 @@ UniValue submitbudget(const UniValue& params, bool fHelp)
 
     if (fHelp || params.size() != 7)
         throw runtime_error(
-            "submitbudget \"proposal-name\" \"url\" payment-count block-start \"nort-address\" monthy-payment \"fee-tx\"\n"
+            "submitbudget \"proposal-name\" \"url\" payment-count block-start \"nort-address\" monthly-payment \"fee-tx\"\n"
             "\nSubmit proposal to the network\n"
 
             "\nArguments:\n"
