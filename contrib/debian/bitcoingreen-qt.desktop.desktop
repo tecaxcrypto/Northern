@@ -1,11 +1,11 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=Northern
-Comment=Northern P2P Cryptocurrency
-Exec=northern-qt %u
+Name=Tecax
+Comment=Tecax P2P Cryptocurrency
+Exec=tecax-qt %u
 Terminal=false
 Type=Application
-Icon=northern128
-MimeType=x-scheme-handler/northern;
+Icon=tecax128
+MimeType=x-scheme-handler/tecax;
 Categories=Office;Finance;
-Name[en_US]=northern-qt.desktop
+Name[en_US]=tecax-qt.desktop

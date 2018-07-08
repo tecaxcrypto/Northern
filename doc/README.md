@@ -1,28 +1,28 @@
-Northern Core
+Tecax Core
 =====================
 
 Setup
 ---------------------
-[Northern Core](http://savebitcoin.io) is the original Northern client and it builds the backbone of the network. However, it downloads and stores the entire history of Northern transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[Tecax Core](http://savebitcoin.io) is the original Tecax client and it builds the backbone of the network. However, it downloads and stores the entire history of Tecax transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
-The following are some helpful notes on how to run Northern on your native platform.
+The following are some helpful notes on how to run Tecax on your native platform.
 
 ### Unix
 
 Unpack the files into a directory and run:
 
-- bin/32/northern-qt (GUI, 32-bit) or bin/32/northernd (headless, 32-bit)
-- bin/64/northern-qt (GUI, 64-bit) or bin/64/northernd (headless, 64-bit)
+- bin/32/tecax-qt (GUI, 32-bit) or bin/32/tecaxd (headless, 32-bit)
+- bin/64/tecax-qt (GUI, 64-bit) or bin/64/tecaxd (headless, 64-bit)
 
 ### Windows
 
-Unpack the files into a directory, and then run northern-qt.exe.
+Unpack the files into a directory, and then run tecax-qt.exe.
 
 ### OSX
 
-Drag Northern-Qt to your applications folder, and then run Northern-Qt.
+Drag Tecax-Qt to your applications folder, and then run Tecax-Qt.
 
 ### Need Help?
 
@@ -30,7 +30,7 @@ Drag Northern-Qt to your applications folder, and then run Northern-Qt.
 
 Building
 ---------------------
-The following are developer notes on how to build Northern on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build Tecax on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OSX Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -38,7 +38,7 @@ The following are developer notes on how to build Northern on your native platfo
 
 Development
 ---------------------
-The Northern repo's [root README](https://github.com/northern/northern/blob/master/README.md) contains relevant information on the development process and automated testing.
+The Tecax repo's [root README](https://github.com/tecax/tecax/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
