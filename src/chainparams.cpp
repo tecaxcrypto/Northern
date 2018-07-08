@@ -54,7 +54,7 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0x000001e1a5a4257154c65b46fc732bfa637ba7a898525373ba32ec4aa79921dd"));
+    (0, uint256("0x00000cf540e641897fa3fedb7383af9e530445abcdf3c7b6a532fd53e6a87b5b"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
@@ -110,18 +110,19 @@ public:
         nTargetSpacing = 2 * 60;  // Tecax: 1 minute blocks
         nMaturity = 5; // 6 block maturity (+1 elsewhere)
         nMasternodeCountDrift = 20;
-        nMaxMoneyOut = 5000000 * COIN; // 5 million max supply
+        nMaxMoneyOut = 15000000 * COIN; // 15 million max supply
 
         /** Height or Time Based Activations **/
         nLastPOWBlock = 200;
         nModifierUpdateBlock = 1; // we use the version 2 for TECAX
 
         /*
-         * python ~/genesis.py -a quark-hash -z "Bitcoin now uses as much energy as Ireland - businessgreen 21/05/2018" -t 1526928414 -v 0 -p 04f5a8143f86ad8ac63791fbbdb8e0b91a8da88c8c693a95f6c2c13c063ea790f7960b8025a9047a7bc671d5cfe707a2dd2e13b86182e1064a0eea7bf863636363
+         * python genesis.py -a quark-hash -t 1531014258 -z "Tecax is alive again! - CM 7/8/2018" -v 0 -n 21561600 -p "04f5a8143f86ad8ac63791fbbdb8e0b91a8da88c8c693a95f6c2c13c063ea790f7960b8025a9047a7bc671d5cfe707a2dd2e13b86182e1064a0eea7bf863636363"
+
 
          */
 
-        const char* pszTimestamp = "Bitcoin now uses as much energy as Ireland - businessgreen 21/05/2018";
+        const char* pszTimestamp = "Tecax is alive again! - CM 7/8/2018";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -134,18 +135,18 @@ public:
         genesis.nVersion = 1;
         genesis.nTime = 1531014258;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 21561793;
+        genesis.nNonce = 22702559;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x000001e1a5a4257154c65b46fc732bfa637ba7a898525373ba32ec4aa79921dd"));
-        assert(genesis.hashMerkleRoot == uint256("0xd611ad6808864e0e9bd331f3ffa2298c9e13a54d9fe59a99ccb3a75db374b7c9"));
+        assert(hashGenesisBlock == uint256("0x00000cf540e641897fa3fedb7383af9e530445abcdf3c7b6a532fd53e6a87b5b"));
+        assert(genesis.hashMerkleRoot == uint256("0x069c3467e6eb0d9991b36f489376622f71589cc971366af9dcc2df85ac4ff3ff"));
 
         // DNS Seeding
         //vSeeds.push_back(CDNSSeedData("", ""));
  
 
-        // Tecax addresses start with 'N'
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 53);
+        // Tecax addresses start with 'T'
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 65);
         // Tecax script addresses start with '3'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 6);
         // Tecax private keys start with 'K'
@@ -171,7 +172,7 @@ public:
 
         nPoolMaxTransactions = 3;
         strSporkKey = "04cc17389379a0e323f53ea504d38cd71f43dc22f597805fed33a51b05ced1a3ae0db84089985f351b3737721736a82f58c8bd529f79c8ffe57e922bda792146ab";
-        strMasternodePoolDummyAddress = "NSJVWUkt6HtSCY2SaJ2akeyJUg8bg1hW3S";
+        strMasternodePoolDummyAddress = "TSJVWUkt6HtSCY2SaJ2akeyJUg8bg1hW3S";
         nStartMasternodePayments = 4070908800; 
 
         nBudget_Fee_Confirmations = 6; // Number of confirmations for the finalization fee
